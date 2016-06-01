@@ -1,0 +1,244 @@
+/*Variables*/
+$fondo1:#083643;
+$triangulo1:#B1E001;
+$cremaOscuro:#C7BB97;
+$fondo-proyecto1: rgba(177,224,1,0.8);
+$fondo-proyecto2: rgba(183,236,215,0.8);
+$fondo-proyecto3: rgba(71,108,94,0.8);
+$fondo-proyecto4: rgba(243,224,1,0.8);
+$font-shadows:'Shadows Into Light Two', cursive;
+$azul:#083643;
+$verde:#B1E001;
+$azulClaro:#B8ECD7;
+$grisVerde:#476C5E;
+$cremaVerde:#CEF09D;
+$cremaTransparente: rgba(206,240,157,0.8);
+
+
+/* Mixin Separador */
+@mixin separador ($fondo, $triangulo){
+    height:20px;
+    background-color: $fondo;
+    .escalon{
+        background-color: $fondo;
+        height: 50px;
+        margin-top: -50px;
+    }
+    .triangulo{
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 65px solid $triangulo;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+/* MIXIN PROYECTO */
+@mixin proyecto($name, $colorHover) {
+    .imagenFondo{
+        $url:"../imagenes/#{$name}.png";
+        background-image: url($url);
+        background-size:cover;
+        background-repeat:no-repeat;
+        height:210px;
+    }
+    .descripcion{
+        background-color: $colorHover;
+        display:inline-block;
+        height:100%;
+        width:100%;
+        color:$azul;
+        padding-top:15%;
+        .verMas{
+            display:none;
+        }
+    }
+    .imagenFondo:hover .descripcion{
+        background-color:$cremaVerde;
+        .verMas{
+            display:inline-block;
+        }
+    }
+}
+
+*{
+    font-family: 'Lato', sans-serif !important;
+}
+.p-0{
+    padding:0 !important;
+}
+
+/*VIDEO*/
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    z-index: -1000;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+/*MENU*/
+#hola { 
+    padding: 1%;
+    width: 54%;
+    position: absolute;
+    top: 65%;
+    color: #fff;
+    left: 67%;
+    margin: -10% 0 0 -45%;
+    text-align: center;
+    border: 3px solid #fff;
+    vertical-align: middle;
+    h1 {
+        color: #fff;
+        letter-spacing: 2rem;
+        font-size: 3em;
+    }
+}
+#menu{
+    position:absolute;
+    right:0;
+}
+.opciones-menu{
+    width:100%;
+    position:absolute;
+    right:5%;
+    display:none;
+    list-style:none;
+    padding:2%;
+    li{
+        padding:2%;
+        display:inline;
+        text-decoration:none;
+        a{
+            color:#fff !important;
+            text-decoration:none !important;
+            letter-spacing:2px;
+        }
+    }
+}
+/*Separador*/
+.separador1{
+    @include separador($azul, $verde);
+}
+/* PROCESO */
+#proceso{
+    padding-top:2%;
+    padding-bottom:5%;
+    background-color: $fondo1;
+    font-size:18px;
+    .miProceso{
+        color:#fff;
+        margin-bottom:2%;
+    }
+    .circulo{
+        height:200px;
+        width:200px;
+        border-radius:100px;
+        border:2px solid #fff;
+        margin:0 auto; 
+        .img-proceso1{
+            max-width:70px;
+            margin-top:18%;
+        }
+        .img-proceso2{
+            max-width:70px;
+            margin-top:18%;
+        }
+        .img-proceso3{
+            max-width:87px;
+            margin-top:23%;
+        }
+        .img-proceso4{
+            max-width:110px;
+            margin-top:30%;
+        }
+        .proceso-item{
+            color:#fff;
+            margin-top:5%;
+        }
+    }
+}
+/* PROYECTOS */
+.p0{
+    padding-left:0;
+    padding-right:0;
+}
+/* Proyecto 1 */
+.proyecto1{
+    @include proyecto(Gema, $fondo-proyecto1);
+}
+/* Proyecto 2 */
+.proyecto2{
+    @include proyecto(ecomunidad, $fondo-proyecto3);
+}
+/* Proyecto 3 */
+.proyecto3{
+    @include proyecto(FlatTheme, $fondo-proyecto2);
+}
+/* Proyecto 4 */
+.proyecto4{
+    @include proyecto(LoveBlog, $fondo-proyecto2);
+}
+/* Proyecto 5 */
+.proyecto5{
+    @include proyecto(TriangleTheme, $fondo-proyecto1);
+}
+/* Proyecto 6 */
+.proyecto6{
+    @include proyecto(flatTheme, $fondo-proyecto3);
+}
+
+/*MODAL Generales */
+.modal-dialog{
+    background-color:$azulClaro;
+    width:80% !important;
+    .mockup img{
+        width:80%;
+    }
+    .verSitio{
+        width:20%;
+        margin:2% auto;
+    }
+}
+/* Separador 2 */
+.separador2{
+    @include separador($azul, $verde);
+}
+/*Herramientas*/
