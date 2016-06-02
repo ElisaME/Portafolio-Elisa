@@ -1,5 +1,5 @@
 /*Variables*/
-$fondo1:#083643;
+/*$fondo1:#083643;
 $triangulo1:#B1E001;
 $cremaOscuro:#C7BB97;
 $fondo-proyecto1: rgba(177,224,1,0.8);
@@ -12,7 +12,21 @@ $verde:#B1E001;
 $azulClaro:#B8ECD7;
 $grisVerde:#476C5E;
 $cremaVerde:#CEF09D;
-$cremaTransparente: rgba(206,240,157,0.8);
+$cremaTransparente: rgba(206,240,157,0.8);*/
+
+$colorPrimario:#00b378;
+$colorPrimarioClaro:#9799ac;
+$colorSecundario:#6b6a98;
+$colorSecundarioClaro:#9283d4;
+$textoOscuro:#32394f;
+$textoClaro:#f6f6f8;
+$primarioTransparente:rgba(0,179,120,0.4);
+$secundarioTransparente:rgba(107,106,152,0.8);
+$primarioClaroTransparente:rgba(151,153,172,0.8);
+$secundarioClaroTransparente:rgba(146,131,212,0.8);
+$claroTransparente:rgba(246,246,248,0.8);
+$hover1: rgba(177,224,1,0.6);
+
 
 
 /* Mixin Separador */
@@ -54,14 +68,14 @@ $cremaTransparente: rgba(206,240,157,0.8);
         display:inline-block;
         height:100%;
         width:100%;
-        color:$azul;
+        color:$textoOscuro;
         padding-top:15%;
         .verMas{
             display:none;
         }
     }
     .imagenFondo:hover .descripcion{
-        background-color:$cremaVerde;
+        background-color:$hover1;
         .verMas{
             display:inline-block;
         }
@@ -155,13 +169,13 @@ $cremaTransparente: rgba(206,240,157,0.8);
 }
 /*Separador*/
 .separador1{
-    @include separador($azul, $verde);
+    @include separador($colorSecundario, $colorPrimario)
 }
 /* PROCESO */
 #proceso{
     padding-top:2%;
     padding-bottom:5%;
-    background-color: $fondo1;
+    background-color: $colorSecundario;
     font-size:18px;
     .miProceso{
         color:#fff;
@@ -171,7 +185,7 @@ $cremaTransparente: rgba(206,240,157,0.8);
         height:200px;
         width:200px;
         border-radius:100px;
-        border:2px solid #fff;
+        border:2px solid $colorPrimarioClaro;
         margin:0 auto; 
         .img-proceso1{
             max-width:70px;
@@ -190,44 +204,52 @@ $cremaTransparente: rgba(206,240,157,0.8);
             margin-top:30%;
         }
         .proceso-item{
-            color:#fff;
+            color:$textoClaro;
             margin-top:5%;
         }
     }
 }
 /* PROYECTOS */
+.titulo-proyecto{
+    background-color: $colorSecundario;
+    color:$textoClaro;
+    padding-bottom:2%;
+}
+#proyectos{
+    border-top: 3px solid $colorPrimario;
+}
 .p0{
     padding-left:0;
     padding-right:0;
 }
 /* Proyecto 1 */
 .proyecto1{
-    @include proyecto(Gema, $fondo-proyecto1);
+    @include proyecto(Gema, $secundarioTransparente);
 }
 /* Proyecto 2 */
 .proyecto2{
-    @include proyecto(ecomunidad, $fondo-proyecto3);
+    @include proyecto(ecomunidad, $primarioClaroTransparente);
 }
 /* Proyecto 3 */
 .proyecto3{
-    @include proyecto(FlatTheme, $fondo-proyecto2);
+    @include proyecto(FlatTheme, $secundarioTransparente);
 }
 /* Proyecto 4 */
 .proyecto4{
-    @include proyecto(LoveBlog, $fondo-proyecto2);
+    @include proyecto(LoveBlog, $primarioClaroTransparente);
 }
 /* Proyecto 5 */
 .proyecto5{
-    @include proyecto(TriangleTheme, $fondo-proyecto1);
+    @include proyecto(TriangleTheme, $secundarioTransparente);
 }
 /* Proyecto 6 */
 .proyecto6{
-    @include proyecto(flatTheme, $fondo-proyecto3);
+    @include proyecto(flatTheme, $primarioClaroTransparente);
 }
 
 /*MODAL Generales */
 .modal-dialog{
-    background-color:$azulClaro;
+    background-color:$colorPrimarioClaro;
     width:80% !important;
     .mockup img{
         width:80%;
@@ -239,6 +261,58 @@ $cremaTransparente: rgba(206,240,157,0.8);
 }
 /* Separador 2 */
 .separador2{
-    @include separador($azul, $verde);
+    @include separador($colorPrimario, $textoClaro)
 }
-/*Herramientas*/
+/*Skills*/
+#skills{
+    background-color:$colorPrimario;
+    color:$textoClaro;
+    padding-bottom:2%;
+    h2{
+        margin-top:15%;
+    }
+    img{
+        max-width:100px;
+        margin:2%;
+    }
+    .skills-list{
+        margin-top:5%;
+    }
+    .progress{
+        background-color:$claroTransparente;
+    }
+    .progress-bar{
+        background-color:$textoClaro !important;
+        color:$colorSecundario;
+        font-size:16px;
+    }
+}
+/*Contacto*/
+#contacto{
+    background-image:url(../imagenes/contacto1.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:400px;
+    position: relative;
+    .filtro{
+        height: 400px;
+        z-index: -1;
+        background-color: $claroTransparente;
+    }
+    .contact-text{
+        display:block;
+        position: absolute;
+        top:15%;
+        left:21%;
+        color:$textoOscuro;
+        .encabezado{
+            font-size: 4em;
+        }
+        img{
+            margin:0 auto;
+            max-width:100px;
+            padding:2%;
+        }
+    }
+}
