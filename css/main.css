@@ -163,6 +163,9 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   padding-left: 0;
   padding-right: 0; }
 
+.btn-info {
+  background-color: #00b378 !important; }
+
 /* Proyecto 1 */
 .proyecto1 .imagenFondo {
   background-image: url("../imagenes/Gema.png");
@@ -175,11 +178,14 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 15%; }
+  padding-top: 10%; }
   .proyecto1 .descripcion .verMas {
     display: none; }
 .proyecto1 .imagenFondo:hover .descripcion {
-  background-color: rgba(177, 224, 1, 0.6); }
+  background-color: rgba(177, 224, 1, 0.5); }
+  .proyecto1 .imagenFondo:hover .descripcion h3 {
+    background-color: #6b6a98;
+    color: #f6f6f8; }
   .proyecto1 .imagenFondo:hover .descripcion .verMas {
     display: inline-block; }
 
@@ -195,11 +201,14 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 15%; }
+  padding-top: 10%; }
   .proyecto2 .descripcion .verMas {
     display: none; }
 .proyecto2 .imagenFondo:hover .descripcion {
-  background-color: rgba(177, 224, 1, 0.6); }
+  background-color: rgba(177, 224, 1, 0.5); }
+  .proyecto2 .imagenFondo:hover .descripcion h3 {
+    background-color: #6b6a98;
+    color: #f6f6f8; }
   .proyecto2 .imagenFondo:hover .descripcion .verMas {
     display: inline-block; }
 
@@ -215,11 +224,14 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 15%; }
+  padding-top: 10%; }
   .proyecto3 .descripcion .verMas {
     display: none; }
 .proyecto3 .imagenFondo:hover .descripcion {
-  background-color: rgba(177, 224, 1, 0.6); }
+  background-color: rgba(177, 224, 1, 0.5); }
+  .proyecto3 .imagenFondo:hover .descripcion h3 {
+    background-color: #6b6a98;
+    color: #f6f6f8; }
   .proyecto3 .imagenFondo:hover .descripcion .verMas {
     display: inline-block; }
 
@@ -235,11 +247,14 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 15%; }
+  padding-top: 10%; }
   .proyecto4 .descripcion .verMas {
     display: none; }
 .proyecto4 .imagenFondo:hover .descripcion {
-  background-color: rgba(177, 224, 1, 0.6); }
+  background-color: rgba(177, 224, 1, 0.5); }
+  .proyecto4 .imagenFondo:hover .descripcion h3 {
+    background-color: #6b6a98;
+    color: #f6f6f8; }
   .proyecto4 .imagenFondo:hover .descripcion .verMas {
     display: inline-block; }
 
@@ -255,17 +270,20 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 15%; }
+  padding-top: 10%; }
   .proyecto5 .descripcion .verMas {
     display: none; }
 .proyecto5 .imagenFondo:hover .descripcion {
-  background-color: rgba(177, 224, 1, 0.6); }
+  background-color: rgba(177, 224, 1, 0.5); }
+  .proyecto5 .imagenFondo:hover .descripcion h3 {
+    background-color: #6b6a98;
+    color: #f6f6f8; }
   .proyecto5 .imagenFondo:hover .descripcion .verMas {
     display: inline-block; }
 
 /* Proyecto 6 */
 .proyecto6 .imagenFondo {
-  background-image: url("../imagenes/flatTheme.png");
+  background-image: url("../imagenes/fashion.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 210px; }
@@ -275,11 +293,14 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 15%; }
+  padding-top: 10%; }
   .proyecto6 .descripcion .verMas {
     display: none; }
 .proyecto6 .imagenFondo:hover .descripcion {
-  background-color: rgba(177, 224, 1, 0.6); }
+  background-color: rgba(177, 224, 1, 0.5); }
+  .proyecto6 .imagenFondo:hover .descripcion h3 {
+    background-color: #6b6a98;
+    color: #f6f6f8; }
   .proyecto6 .imagenFondo:hover .descripcion .verMas {
     display: inline-block; }
 
@@ -289,6 +310,11 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   width: 80% !important; }
   .modal-dialog .mockup img {
     width: 80%; }
+  .modal-dialog .mockup hr {
+    background-color: #6b6a98;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 3px; }
   .modal-dialog .verSitio {
     width: 20%;
     margin: 2% auto; }

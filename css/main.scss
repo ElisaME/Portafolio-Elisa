@@ -25,7 +25,7 @@ $secundarioTransparente:rgba(107,106,152,0.8);
 $primarioClaroTransparente:rgba(151,153,172,0.8);
 $secundarioClaroTransparente:rgba(146,131,212,0.8);
 $claroTransparente:rgba(246,246,248,0.8);
-$hover1: rgba(177,224,1,0.6);
+$hover1: rgba(177,224,1,0.5);
 
 
 
@@ -69,13 +69,17 @@ $hover1: rgba(177,224,1,0.6);
         height:100%;
         width:100%;
         color:$textoOscuro;
-        padding-top:15%;
+        padding-top:10%;
         .verMas{
             display:none;
         }
     }
     .imagenFondo:hover .descripcion{
         background-color:$hover1;
+        h3{
+            background-color: $colorSecundario;
+            color:$textoClaro;
+        }
         .verMas{
             display:inline-block;
         }
@@ -222,6 +226,9 @@ $hover1: rgba(177,224,1,0.6);
     padding-left:0;
     padding-right:0;
 }
+.btn-info{
+    background-color: $colorPrimario !important;
+}
 /* Proyecto 1 */
 .proyecto1{
     @include proyecto(Gema, $secundarioTransparente);
@@ -244,7 +251,7 @@ $hover1: rgba(177,224,1,0.6);
 }
 /* Proyecto 6 */
 .proyecto6{
-    @include proyecto(flatTheme, $primarioClaroTransparente);
+    @include proyecto(fashion, $primarioClaroTransparente);
 }
 
 /*MODAL Generales */
@@ -253,6 +260,12 @@ $hover1: rgba(177,224,1,0.6);
     width:80% !important;
     .mockup img{
         width:80%;
+    }
+    .mockup hr{
+        background-color:$colorSecundario;
+        margin-top:2%;
+        margin-bottom:2%;
+        height:3px;
     }
     .verSitio{
         width:20%;
