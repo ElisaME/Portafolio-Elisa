@@ -335,19 +335,16 @@ $hover1: rgba(177,224,1,0.5);
         }
     }
 }
-
+  
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px){
    #hola { 
         margin: -63% 0 0 -56%;
         width:80%; 
     }
-    .escalon{
-        display:none;
-        .triangulo{
-            display:block;
-        }
-    }
+    #separador {
+        display: none;
+}
     .imagenFondo{
         height:290px !important;
     }

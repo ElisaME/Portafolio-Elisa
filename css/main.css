@@ -412,10 +412,8 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
     margin: -63% 0 0 -56%;
     width: 80%; }
 
-  .escalon {
+  #separador {
     display: none; }
-    .escalon .triangulo {
-      display: block; }
 
   .imagenFondo {
     height: 290px !important; }
