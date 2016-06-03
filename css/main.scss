@@ -62,6 +62,11 @@ $hover1: rgba(177,224,1,0.5);
         background-size:cover;
         background-repeat:no-repeat;
         height:210px;
+        h3{
+            background-color: $colorPrimario;
+            padding:2%;
+            display:inline-block;
+        }
     }
     .descripcion{
         background-color: $colorHover;
@@ -81,7 +86,7 @@ $hover1: rgba(177,224,1,0.5);
             color:$textoClaro;
         }
         .verMas{
-            display:inline-block;
+            display:block;
         }
     }
 }
@@ -189,7 +194,7 @@ $hover1: rgba(177,224,1,0.5);
         height:200px;
         width:200px;
         border-radius:100px;
-        border:2px solid $colorPrimario;
+        border:2px solid $colorPrimarioClaro;
         margin:0 auto; 
         .img-proceso1{
             max-width:70px;
@@ -210,6 +215,7 @@ $hover1: rgba(177,224,1,0.5);
         .proceso-item{
             color:$textoClaro;
             margin-top:5%;
+            font-size:1em;
         }
     }
 }
@@ -293,11 +299,12 @@ $hover1: rgba(177,224,1,0.5);
     }
     .progress{
         background-color:$claroTransparente;
+        height:25px !important;
     }
     .progress-bar{
         background-color:$textoClaro !important;
         color:$colorSecundario;
-        font-size:16px;
+        font-size:1.5em;
     }
 }
 /*Contacto*/
@@ -335,6 +342,15 @@ $hover1: rgba(177,224,1,0.5);
    #hola { 
         margin: -63% 0 0 -56%;
         width:80%; 
+    }
+    .imagenFondo{
+        height:200px !important;
+    }
+    .escalon{
+        display:none;
+        .triangulo{
+            display:block;
+        }
     }
     .circulo{
         width: 150px !important;
