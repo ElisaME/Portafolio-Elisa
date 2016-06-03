@@ -171,8 +171,7 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto1 .imagenFondo {
   background-image: url("../imagenes/Gema.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 210px; }
+  background-repeat: no-repeat; }
   .proyecto1 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -198,8 +197,7 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto2 .imagenFondo {
   background-image: url("../imagenes/ecomunidad.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 210px; }
+  background-repeat: no-repeat; }
   .proyecto2 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -225,8 +223,7 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto3 .imagenFondo {
   background-image: url("../imagenes/FlatTheme.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 210px; }
+  background-repeat: no-repeat; }
   .proyecto3 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -252,8 +249,7 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto4 .imagenFondo {
   background-image: url("../imagenes/LoveBlog.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 210px; }
+  background-repeat: no-repeat; }
   .proyecto4 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -279,8 +275,7 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto5 .imagenFondo {
   background-image: url("../imagenes/TriangleTheme.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 210px; }
+  background-repeat: no-repeat; }
   .proyecto5 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -306,8 +301,7 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto6 .imagenFondo {
   background-image: url("../imagenes/fashion.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 210px; }
+  background-repeat: no-repeat; }
   .proyecto6 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -418,13 +412,13 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
     margin: -63% 0 0 -56%;
     width: 80%; }
 
-  .imagenFondo {
-    height: 200px !important; }
-
   .escalon {
     display: none; }
     .escalon .triangulo {
       display: block; }
+
+  .imagenFondo {
+    height: 290px !important; }
 
   .circulo {
     width: 150px !important;
