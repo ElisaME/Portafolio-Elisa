@@ -14,6 +14,61 @@ $grisVerde:#476C5E;
 $cremaVerde:#CEF09D;
 $cremaTransparente: rgba(206,240,157,0.8);*/
 /* Mixin Separador */
+/* @mixin separador ($fondo, $triangulo){
+    height:10px;
+    background-color: $fondo;
+    .escalon{
+        background-color: $fondo;
+        height: 50px;
+        margin-top: -50px;
+    }
+    .triangulo{
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 65px solid $triangulo;
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+} */
+/* TRIANGULOS */
+.triangulo1 {
+  position: absolute;
+  top: -18px;
+  left: 2%;
+  width: 0;
+  height: 0;
+  border-left: 34px solid #00b378;
+  border-top: 34px solid transparent;
+  border-bottom: 34px solid transparent;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.triangulo2 {
+  position: absolute;
+  top: -18px;
+  left: 2%;
+  width: 0;
+  height: 0;
+  border-left: 34px solid #6b6a98;
+  border-top: 34px solid transparent;
+  border-bottom: 34px solid transparent;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
 /* MIXIN PROYECTO */
 * {
   font-family: 'Lato', sans-serif !important; }
@@ -96,35 +151,14 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
       text-decoration: none !important;
       letter-spacing: 2px; }
 
-/*Separador*/
-.separador1 {
-  height: 20px;
-  background-color: #6b6a98; }
-  .separador1 .escalon {
-    background-color: #6b6a98;
-    height: 50px;
-    margin-top: -50px; }
-  .separador1 .triangulo {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-left: 65px solid #00b378;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg); }
-
 /* PROCESO */
 #proceso {
   padding-top: 2%;
   padding-bottom: 5%;
   background-color: #6b6a98;
-  font-size: 18px; }
+  font-size: 18px;
+  border-top: 3px solid #00b378;
+  position: relative; }
   #proceso .miProceso {
     color: #fff;
     margin-bottom: 2%; }
@@ -153,12 +187,13 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 
 /* PROYECTOS */
 .titulo-proyecto {
-  background-color: #6b6a98;
-  color: #f6f6f8;
   padding-bottom: 2%; }
 
 #proyectos {
-  border-top: 3px solid #00b378; }
+  border-top: 3px solid #00b378;
+  background-image: url(../imagenes/textura_2.jpg);
+  padding-bottom: 5%;
+  position: relative; }
 
 .p0 {
   padding-left: 0;
@@ -171,7 +206,8 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto1 .imagenFondo {
   background-image: url("../imagenes/Gema.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 200px; }
   .proyecto1 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -197,7 +233,8 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto2 .imagenFondo {
   background-image: url("../imagenes/ecomunidad.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 200px; }
   .proyecto2 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -223,7 +260,8 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto3 .imagenFondo {
   background-image: url("../imagenes/FlatTheme.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 200px; }
   .proyecto3 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -249,7 +287,8 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto4 .imagenFondo {
   background-image: url("../imagenes/LoveBlog.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 200px; }
   .proyecto4 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -275,7 +314,8 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto5 .imagenFondo {
   background-image: url("../imagenes/TriangleTheme.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 200px; }
   .proyecto5 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -301,7 +341,8 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
 .proyecto6 .imagenFondo {
   background-image: url("../imagenes/fashion.png");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 200px; }
   .proyecto6 .imagenFondo h3 {
     background-color: #00b378;
     padding: 2%;
@@ -338,34 +379,13 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
     width: 20%;
     margin: 2% auto; }
 
-/* Separador 2 */
-.separador2 {
-  height: 20px;
-  background-color: #00b378; }
-  .separador2 .escalon {
-    background-color: #00b378;
-    height: 50px;
-    margin-top: -50px; }
-  .separador2 .triangulo {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-left: 65px solid #f6f6f8;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg); }
-
 /*Skills*/
 #skills {
   background-color: #00b378;
   color: #f6f6f8;
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+  position: relative;
+  border-top: 3px solid #6b6a98; }
   #skills h2 {
     margin-top: 15%; }
   #skills img {
@@ -475,6 +495,36 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
     .opciones-menu li {
       padding: 2%;
       display: block;
-      text-decoration: none; } }
+      text-decoration: none; }
+
+  .triangulo1 {
+    position: absolute;
+    top: -10px;
+    left: 6%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #00b378;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+  .triangulo2 {
+    position: absolute;
+    top: -10px;
+    left: 6%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #6b6a98;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); } }
 
 /*# sourceMappingURL=main.css.map */

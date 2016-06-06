@@ -30,8 +30,8 @@ $hover1: rgba(177,224,1,0.5);
 
 
 /* Mixin Separador */
-@mixin separador ($fondo, $triangulo){
-    height:20px;
+/* @mixin separador ($fondo, $triangulo){
+    height:10px;
     background-color: $fondo;
     .escalon{
         background-color: $fondo;
@@ -53,6 +53,37 @@ $hover1: rgba(177,224,1,0.5);
         -o-transform: rotate(90deg);
         transform: rotate(90deg);
     }
+} */
+/* TRIANGULOS */
+.triangulo1{
+    position: absolute;
+    top: -18px;
+    left: 2%;
+    width: 0;
+    height: 0;
+    border-left: 34px solid $colorPrimario;
+    border-top: 34px solid transparent;
+    border-bottom: 34px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.triangulo2{
+    position: absolute;
+    top: -18px;
+    left: 2%;
+    width: 0;
+    height: 0;
+    border-left: 34px solid $colorSecundario;
+    border-top: 34px solid transparent;
+    border-bottom: 34px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 /* MIXIN PROYECTO */
 @mixin proyecto($name, $colorHover) {
@@ -61,6 +92,7 @@ $hover1: rgba(177,224,1,0.5);
         background-image: url($url);
         background-size:cover;
         background-repeat:no-repeat;
+        height:200px;
         h3{
             background-color: $colorPrimario;
             padding:2%;
@@ -175,16 +207,14 @@ $hover1: rgba(177,224,1,0.5);
         }
     }
 }
-/*Separador*/
-.separador1{
-    @include separador($colorSecundario, $colorPrimario)
-}
 /* PROCESO */
 #proceso{
     padding-top:2%;
     padding-bottom:5%;
     background-color: $colorSecundario;
     font-size:18px;
+    border-top: 3px solid $colorPrimario;
+    position:relative;
     .miProceso{
         color:#fff;
         margin-bottom:2%;
@@ -220,12 +250,13 @@ $hover1: rgba(177,224,1,0.5);
 }
 /* PROYECTOS */
 .titulo-proyecto{
-    background-color: $colorSecundario;
-    color:$textoClaro;
     padding-bottom:2%;
 }
 #proyectos{
     border-top: 3px solid $colorPrimario;
+    background-image:url(../imagenes/textura_2.jpg);
+    padding-bottom:5%;
+    position:relative;
 }
 .p0{
     padding-left:0;
@@ -277,15 +308,14 @@ $hover1: rgba(177,224,1,0.5);
         margin:2% auto;
     }
 }
-/* Separador 2 */
-.separador2{
-    @include separador($colorPrimario, $textoClaro)
-}
+
 /*Skills*/
 #skills{
     background-color:$colorPrimario;
     color:$textoClaro;
     padding-bottom:2%;
+    position: relative;
+    border-top: 3px solid $colorSecundario;
     h2{
         margin-top:15%;
     }
@@ -414,4 +444,34 @@ $hover1: rgba(177,224,1,0.5);
             text-decoration:none;
         }
     }
+    .triangulo1{
+    position: absolute;
+    top: -10px;
+    left: 6%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid $colorPrimario;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.triangulo2{
+    position: absolute;
+    top: -10px;
+    left: 6%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid $colorSecundario;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 }
