@@ -1,19 +1,4 @@
-/*Variables*/
-/*$fondo1:#083643;
-$triangulo1:#B1E001;
-$cremaOscuro:#C7BB97;
-$fondo-proyecto1: rgba(177,224,1,0.8);
-$fondo-proyecto2: rgba(183,236,215,0.8);
-$fondo-proyecto3: rgba(71,108,94,0.8);
-$fondo-proyecto4: rgba(243,224,1,0.8);
-$font-shadows:'Shadows Into Light Two', cursive;
-$azul:#083643;
-$verde:#B1E001;
-$azulClaro:#B8ECD7;
-$grisVerde:#476C5E;
-$cremaVerde:#CEF09D;
-$cremaTransparente: rgba(206,240,157,0.8);*/
-
+/*Variables colores*/
 $colorPrimario:#00b378;
 $colorPrimarioClaro:#9799ac;
 $colorSecundario:#6b6a98;
@@ -28,34 +13,23 @@ $claroTransparente:rgba(246,246,248,0.8);
 $hover1: rgba(177,224,1,0.5);
 
 
-
-/* Mixin Separador */
-/* @mixin separador ($fondo, $triangulo){
-    height:10px;
-    background-color: $fondo;
-    .escalon{
-        background-color: $fondo;
-        height: 50px;
-        margin-top: -50px;
-    }
-    .triangulo{
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border-left: 65px solid $triangulo;
-        border-top: 40px solid transparent;
-        border-bottom: 40px solid transparent;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-} */
 /* TRIANGULOS */
-.triangulo1{
+.triangulo1-down{
+    position: absolute;
+    top: -18px;
+    right: 2%;
+    width: 0;
+    height: 0;
+    border-left: 34px solid $colorPrimario;
+    border-top: 34px solid transparent;
+    border-bottom: 34px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.triangulo2-down{
     position: absolute;
     top: -18px;
     left: 2%;
@@ -70,10 +44,10 @@ $hover1: rgba(177,224,1,0.5);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-.triangulo2{
+.triangulo3-down{
     position: absolute;
     top: -18px;
-    left: 2%;
+    right: 2%;
     width: 0;
     height: 0;
     border-left: 34px solid $colorSecundario;
@@ -95,8 +69,9 @@ $hover1: rgba(177,224,1,0.5);
         height:200px;
         h3{
             background-color: $colorPrimario;
-            padding:2%;
+            padding:4%;
             display:inline-block;
+            border-radius:5px;
         }
     }
     .descripcion{
@@ -105,12 +80,13 @@ $hover1: rgba(177,224,1,0.5);
         height:100%;
         width:100%;
         color:$textoOscuro;
-        padding-top:10%;
+        padding-top:40px;
         .verMas{
             display:none;
         }
     }
     .imagenFondo:hover .descripcion{
+        transition:all .3s ease;
         background-color:$hover1;
         h3{
             background-color: $colorSecundario;
@@ -186,8 +162,8 @@ $hover1: rgba(177,224,1,0.5);
     }
 }
 #menu{
-    position:absolute;
-    right:0;
+    position: absolute;
+    right: 0;
 }
 .opciones-menu{
     width:100%;
@@ -206,6 +182,9 @@ $hover1: rgba(177,224,1,0.5);
             letter-spacing:2px;
         }
     }
+}
+.hamburger2{
+    background-color: $colorSecundario !important;
 }
 /* PROCESO */
 #proceso{
@@ -304,7 +283,8 @@ $hover1: rgba(177,224,1,0.5);
         height:3px;
     }
     .verSitio{
-        width:20%;
+        font-size:20px;
+        width:40%;
         margin:2% auto;
     }
 }
@@ -319,6 +299,14 @@ $hover1: rgba(177,224,1,0.5);
     h2{
         margin-top:15%;
     }
+    .circulo-skills{
+        width:150px;
+        height:150px;
+        border-radius:100px;
+        background-color: $textoClaro;
+        margin:0 auto;
+        padding:4%;
+    }
     img{
         max-width:100px;
         margin:2%;
@@ -329,10 +317,10 @@ $hover1: rgba(177,224,1,0.5);
     .progress{
         background-color:$claroTransparente;
         height:25px !important;
+        margin-bottom:0 !important;
     }
     .progress-bar{
-        background-color:$textoClaro !important;
-        color:$colorSecundario;
+        background-color:$primarioClaroTransparente !important;
         font-size:1.5em;
     }
 }
@@ -444,34 +432,7 @@ $hover1: rgba(177,224,1,0.5);
             text-decoration:none;
         }
     }
-    .triangulo1{
-    position: absolute;
-    top: -10px;
-    left: 6%;
-    width: 0;
-    height: 0;
-    border-left: 20px solid $colorPrimario;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-.triangulo2{
-    position: absolute;
-    top: -10px;
-    left: 6%;
-    width: 0;
-    height: 0;
-    border-left: 20px solid $colorSecundario;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
+    .triangulo1-down, .triangulo2-down, .triangulo3-down{
+        display:none;
+    }
 }

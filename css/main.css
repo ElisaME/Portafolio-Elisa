@@ -1,45 +1,21 @@
-/*Variables*/
-/*$fondo1:#083643;
-$triangulo1:#B1E001;
-$cremaOscuro:#C7BB97;
-$fondo-proyecto1: rgba(177,224,1,0.8);
-$fondo-proyecto2: rgba(183,236,215,0.8);
-$fondo-proyecto3: rgba(71,108,94,0.8);
-$fondo-proyecto4: rgba(243,224,1,0.8);
-$font-shadows:'Shadows Into Light Two', cursive;
-$azul:#083643;
-$verde:#B1E001;
-$azulClaro:#B8ECD7;
-$grisVerde:#476C5E;
-$cremaVerde:#CEF09D;
-$cremaTransparente: rgba(206,240,157,0.8);*/
-/* Mixin Separador */
-/* @mixin separador ($fondo, $triangulo){
-    height:10px;
-    background-color: $fondo;
-    .escalon{
-        background-color: $fondo;
-        height: 50px;
-        margin-top: -50px;
-    }
-    .triangulo{
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border-left: 65px solid $triangulo;
-        border-top: 40px solid transparent;
-        border-bottom: 40px solid transparent;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-} */
+/*Variables colores*/
 /* TRIANGULOS */
-.triangulo1 {
+.triangulo1-down {
+  position: absolute;
+  top: -18px;
+  right: 2%;
+  width: 0;
+  height: 0;
+  border-left: 34px solid #00b378;
+  border-top: 34px solid transparent;
+  border-bottom: 34px solid transparent;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.triangulo2-down {
   position: absolute;
   top: -18px;
   left: 2%;
@@ -54,10 +30,10 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   -o-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-.triangulo2 {
+.triangulo3-down {
   position: absolute;
   top: -18px;
-  left: 2%;
+  right: 2%;
   width: 0;
   height: 0;
   border-left: 34px solid #6b6a98;
@@ -151,6 +127,9 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
       text-decoration: none !important;
       letter-spacing: 2px; }
 
+.hamburger2 {
+  background-color: #6b6a98 !important; }
+
 /* PROCESO */
 #proceso {
   padding-top: 2%;
@@ -210,18 +189,20 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 200px; }
   .proyecto1 .imagenFondo h3 {
     background-color: #00b378;
-    padding: 2%;
-    display: inline-block; }
+    padding: 4%;
+    display: inline-block;
+    border-radius: 5px; }
 .proyecto1 .descripcion {
   background-color: rgba(107, 106, 152, 0.8);
   display: inline-block;
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 10%; }
+  padding-top: 40px; }
   .proyecto1 .descripcion .verMas {
     display: none; }
 .proyecto1 .imagenFondo:hover .descripcion {
+  transition: all .3s ease;
   background-color: rgba(177, 224, 1, 0.5); }
   .proyecto1 .imagenFondo:hover .descripcion h3 {
     background-color: #6b6a98;
@@ -237,18 +218,20 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 200px; }
   .proyecto2 .imagenFondo h3 {
     background-color: #00b378;
-    padding: 2%;
-    display: inline-block; }
+    padding: 4%;
+    display: inline-block;
+    border-radius: 5px; }
 .proyecto2 .descripcion {
   background-color: rgba(151, 153, 172, 0.8);
   display: inline-block;
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 10%; }
+  padding-top: 40px; }
   .proyecto2 .descripcion .verMas {
     display: none; }
 .proyecto2 .imagenFondo:hover .descripcion {
+  transition: all .3s ease;
   background-color: rgba(177, 224, 1, 0.5); }
   .proyecto2 .imagenFondo:hover .descripcion h3 {
     background-color: #6b6a98;
@@ -264,18 +247,20 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 200px; }
   .proyecto3 .imagenFondo h3 {
     background-color: #00b378;
-    padding: 2%;
-    display: inline-block; }
+    padding: 4%;
+    display: inline-block;
+    border-radius: 5px; }
 .proyecto3 .descripcion {
   background-color: rgba(107, 106, 152, 0.8);
   display: inline-block;
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 10%; }
+  padding-top: 40px; }
   .proyecto3 .descripcion .verMas {
     display: none; }
 .proyecto3 .imagenFondo:hover .descripcion {
+  transition: all .3s ease;
   background-color: rgba(177, 224, 1, 0.5); }
   .proyecto3 .imagenFondo:hover .descripcion h3 {
     background-color: #6b6a98;
@@ -291,18 +276,20 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 200px; }
   .proyecto4 .imagenFondo h3 {
     background-color: #00b378;
-    padding: 2%;
-    display: inline-block; }
+    padding: 4%;
+    display: inline-block;
+    border-radius: 5px; }
 .proyecto4 .descripcion {
   background-color: rgba(151, 153, 172, 0.8);
   display: inline-block;
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 10%; }
+  padding-top: 40px; }
   .proyecto4 .descripcion .verMas {
     display: none; }
 .proyecto4 .imagenFondo:hover .descripcion {
+  transition: all .3s ease;
   background-color: rgba(177, 224, 1, 0.5); }
   .proyecto4 .imagenFondo:hover .descripcion h3 {
     background-color: #6b6a98;
@@ -318,18 +305,20 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 200px; }
   .proyecto5 .imagenFondo h3 {
     background-color: #00b378;
-    padding: 2%;
-    display: inline-block; }
+    padding: 4%;
+    display: inline-block;
+    border-radius: 5px; }
 .proyecto5 .descripcion {
   background-color: rgba(107, 106, 152, 0.8);
   display: inline-block;
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 10%; }
+  padding-top: 40px; }
   .proyecto5 .descripcion .verMas {
     display: none; }
 .proyecto5 .imagenFondo:hover .descripcion {
+  transition: all .3s ease;
   background-color: rgba(177, 224, 1, 0.5); }
   .proyecto5 .imagenFondo:hover .descripcion h3 {
     background-color: #6b6a98;
@@ -345,18 +334,20 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   height: 200px; }
   .proyecto6 .imagenFondo h3 {
     background-color: #00b378;
-    padding: 2%;
-    display: inline-block; }
+    padding: 4%;
+    display: inline-block;
+    border-radius: 5px; }
 .proyecto6 .descripcion {
   background-color: rgba(151, 153, 172, 0.8);
   display: inline-block;
   height: 100%;
   width: 100%;
   color: #32394f;
-  padding-top: 10%; }
+  padding-top: 40px; }
   .proyecto6 .descripcion .verMas {
     display: none; }
 .proyecto6 .imagenFondo:hover .descripcion {
+  transition: all .3s ease;
   background-color: rgba(177, 224, 1, 0.5); }
   .proyecto6 .imagenFondo:hover .descripcion h3 {
     background-color: #6b6a98;
@@ -376,7 +367,8 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
     margin-bottom: 2%;
     height: 3px; }
   .modal-dialog .verSitio {
-    width: 20%;
+    font-size: 20px;
+    width: 40%;
     margin: 2% auto; }
 
 /*Skills*/
@@ -388,6 +380,13 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
   border-top: 3px solid #6b6a98; }
   #skills h2 {
     margin-top: 15%; }
+  #skills .circulo-skills {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: #f6f6f8;
+    margin: 0 auto;
+    padding: 4%; }
   #skills img {
     max-width: 100px;
     margin: 2%; }
@@ -395,10 +394,10 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
     margin-top: 5%; }
   #skills .progress {
     background-color: rgba(246, 246, 248, 0.8);
-    height: 25px !important; }
+    height: 25px !important;
+    margin-bottom: 0 !important; }
   #skills .progress-bar {
-    background-color: #f6f6f8 !important;
-    color: #6b6a98;
+    background-color: rgba(151, 153, 172, 0.8) !important;
     font-size: 1.5em; }
 
 /*Contacto*/
@@ -497,34 +496,7 @@ $cremaTransparente: rgba(206,240,157,0.8);*/
       display: block;
       text-decoration: none; }
 
-  .triangulo1 {
-    position: absolute;
-    top: -10px;
-    left: 6%;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #00b378;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg); }
-
-  .triangulo2 {
-    position: absolute;
-    top: -10px;
-    left: 6%;
-    width: 0;
-    height: 0;
-    border-left: 20px solid #6b6a98;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg); } }
+  .triangulo1-down, .triangulo2-down, .triangulo3-down {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
