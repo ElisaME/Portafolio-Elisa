@@ -11,6 +11,7 @@ $primarioClaroTransparente:rgba(151,153,172,0.8);
 $secundarioClaroTransparente:rgba(146,131,212,0.8);
 $claroTransparente:rgba(246,246,248,0.8);
 $hover1: rgba(177,224,1,0.5);
+$verde:#b1e001;
 
 
 /* TRIANGULOS */
@@ -191,7 +192,7 @@ $hover1: rgba(177,224,1,0.5);
     padding-top:2%;
     padding-bottom:5%;
     background-color: $colorSecundario;
-    font-size:18px;
+    font-size:1.5em;
     border-top: 3px solid $colorPrimario;
     position:relative;
     .miProceso{
@@ -291,28 +292,35 @@ $hover1: rgba(177,224,1,0.5);
 
 /*Skills*/
 #skills{
-    background-color:$colorPrimario;
-    color:$textoClaro;
-    padding-bottom:2%;
+    background-color:$secundarioTransparente;
+    padding-bottom:5%;
     position: relative;
-    border-top: 3px solid $colorSecundario;
-    h2{
-        margin-top:15%;
-    }
-    .circulo-skills{
-        width:150px;
-        height:150px;
-        border-radius:100px;
-        background-color: $textoClaro;
-        margin:0 auto;
-        padding:4%;
-    }
+    border-top: 3px solid $colorPrimario;
+    color:$textoClaro;
     img{
-        max-width:100px;
-        margin:2%;
+        max-width:90px;
+        opacity:0.8;
+
     }
-    .skills-list{
-        margin-top:5%;
+    h2{
+        padding-bottom:2%;
+    }
+    p{
+        display:none;
+    }
+    .skill-name:hover p{
+        display:block;
+        text-align:center;
+        font-size: 16px;
+        position:absolute;
+        left:32%;
+        padding-top:2%;
+    }
+    .skill-name:hover img{
+        opacity:1;
+    }
+    .mg-l{
+        margin-left:8%;
     }
     .progress{
         background-color:$claroTransparente;
@@ -358,7 +366,10 @@ $hover1: rgba(177,224,1,0.5);
 @media screen and (max-width: 768px){
    #hola { 
         margin: -63% 0 0 -56%;
-        width:80%; 
+        width:80%;
+        h1{
+            letter-spacing:1rem !important;
+        }
     }
     #separador {
         display: none;
@@ -370,6 +381,15 @@ $hover1: rgba(177,224,1,0.5);
         width: 150px !important;
         height: 150px !important;
         margin-bottom:10% !important;
+    }
+    #proceso{
+        h3{
+            font-size: 18px !important;
+            margin-bottom:8%;
+        }
+        .proceso-item{
+            font-size: 16px !important;
+        }
     }
     .img-proceso1{
         max-width:50px !important;
@@ -408,11 +428,11 @@ $hover1: rgba(177,224,1,0.5);
             height:1px !important;
         }
     }
-    .separador1 .triangulo{
-        left:43% !important;
+    .skill-name{
+        margin-top:25%;
     }
-    .separador2 .triangulo{
-        left:43% !important;
+    #skills{
+        padding-bottom:12% !important;
     }
     .contact-text{
         top:20% !important;

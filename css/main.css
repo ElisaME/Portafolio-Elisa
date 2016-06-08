@@ -135,7 +135,7 @@
   padding-top: 2%;
   padding-bottom: 5%;
   background-color: #6b6a98;
-  font-size: 18px;
+  font-size: 1.5em;
   border-top: 3px solid #00b378;
   position: relative; }
   #proceso .miProceso {
@@ -373,25 +373,29 @@
 
 /*Skills*/
 #skills {
-  background-color: #00b378;
-  color: #f6f6f8;
-  padding-bottom: 2%;
+  background-color: rgba(107, 106, 152, 0.8);
+  padding-bottom: 5%;
   position: relative;
-  border-top: 3px solid #6b6a98; }
-  #skills h2 {
-    margin-top: 15%; }
-  #skills .circulo-skills {
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    background-color: #f6f6f8;
-    margin: 0 auto;
-    padding: 4%; }
+  border-top: 3px solid #00b378;
+  color: #f6f6f8; }
   #skills img {
-    max-width: 100px;
-    margin: 2%; }
-  #skills .skills-list {
-    margin-top: 5%; }
+    max-width: 90px;
+    opacity: 0.8; }
+  #skills h2 {
+    padding-bottom: 2%; }
+  #skills p {
+    display: none; }
+  #skills .skill-name:hover p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    left: 32%;
+    padding-top: 2%; }
+  #skills .skill-name:hover img {
+    opacity: 1; }
+  #skills .mg-l {
+    margin-left: 8%; }
   #skills .progress {
     background-color: rgba(246, 246, 248, 0.8);
     height: 25px !important;
@@ -430,6 +434,8 @@
   #hola {
     margin: -63% 0 0 -56%;
     width: 80%; }
+    #hola h1 {
+      letter-spacing: 1rem !important; }
 
   #separador {
     display: none; }
@@ -441,6 +447,12 @@
     width: 150px !important;
     height: 150px !important;
     margin-bottom: 10% !important; }
+
+  #proceso h3 {
+    font-size: 18px !important;
+    margin-bottom: 8%; }
+  #proceso .proceso-item {
+    font-size: 16px !important; }
 
   .img-proceso1 {
     max-width: 50px !important;
@@ -475,11 +487,11 @@
     .modal-dialog hr {
       height: 1px !important; }
 
-  .separador1 .triangulo {
-    left: 43% !important; }
+  .skill-name {
+    margin-top: 25%; }
 
-  .separador2 .triangulo {
-    left: 43% !important; }
+  #skills {
+    padding-bottom: 12% !important; }
 
   .contact-text {
     top: 20% !important;
