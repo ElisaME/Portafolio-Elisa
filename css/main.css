@@ -52,42 +52,39 @@
 .p-0 {
   padding: 0 !important; }
 
-/*VIDEO*/
-.homepage-hero-module {
-  border-right: none;
-  border-left: none;
+h2 {
+  color: #32394f; }
+
+.navbar-default {
+  background-color: transparent !important;
+  border-bottom: transparent !important; }
+  .navbar-default .navbar-nav > li > a {
+    color: #f6f6f8 !important; }
+
+/*Menu*/
+#home {
+  height: 700px; }
+
+#contenedor {
   position: relative; }
-
-.no-video .video-container video,
-.touch .video-container video {
-  display: none; }
-
-.no-video .video-container .poster,
-.touch .video-container .poster {
-  display: block !important; }
 
 .video-container {
   position: relative;
   bottom: 0%;
   left: 0%;
-  height: 100%;
-  width: 100%;
   overflow: hidden;
-  background: #000;
   z-index: -1000; }
 
-.video-container .filter {
+.filter {
+  height: 100%;
   z-index: 100;
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  width: 100%; }
+  background: rgba(0, 0, 0, 0.4); }
 
-.video-container video {
+#contenedor video {
   position: absolute;
   z-index: 0;
-  bottom: 0; }
-
-.video-container video.fillWidth {
+  bottom: 0;
   width: 100%; }
 
 /*MENU*/
@@ -108,16 +105,21 @@
     font-size: 3em; }
 
 #menu {
-  position: absolute;
-  right: 0; }
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  top: 0; }
 
 .opciones-menu {
   width: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   right: 5%;
+  top: 0;
   display: none;
   list-style: none;
-  padding: 2%; }
+  padding: 15px;
+  background-color: #6b6a98; }
   .opciones-menu li {
     padding: 2%;
     display: inline;
@@ -164,6 +166,14 @@
       margin-top: 5%;
       font-size: 1em; }
 
+/*SOBRE MI*/
+#sobreMi {
+  background-color: #f6f6f8;
+  color: #32394f; }
+  #sobreMi p {
+    font-size: 18px;
+    text-align: justify; }
+
 /* PROYECTOS */
 .titulo-proyecto {
   padding-bottom: 2%; }
@@ -191,7 +201,8 @@
     background-color: #00b378;
     padding: 4%;
     display: inline-block;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: #32394f; }
 .proyecto1 .descripcion {
   background-color: rgba(107, 106, 152, 0.8);
   display: inline-block;
@@ -220,7 +231,8 @@
     background-color: #00b378;
     padding: 4%;
     display: inline-block;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: #32394f; }
 .proyecto2 .descripcion {
   background-color: rgba(151, 153, 172, 0.8);
   display: inline-block;
@@ -249,7 +261,8 @@
     background-color: #00b378;
     padding: 4%;
     display: inline-block;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: #32394f; }
 .proyecto3 .descripcion {
   background-color: rgba(107, 106, 152, 0.8);
   display: inline-block;
@@ -278,7 +291,8 @@
     background-color: #00b378;
     padding: 4%;
     display: inline-block;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: #32394f; }
 .proyecto4 .descripcion {
   background-color: rgba(151, 153, 172, 0.8);
   display: inline-block;
@@ -307,7 +321,8 @@
     background-color: #00b378;
     padding: 4%;
     display: inline-block;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: #32394f; }
 .proyecto5 .descripcion {
   background-color: rgba(107, 106, 152, 0.8);
   display: inline-block;
@@ -336,7 +351,8 @@
     background-color: #00b378;
     padding: 4%;
     display: inline-block;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: #32394f; }
 .proyecto6 .descripcion {
   background-color: rgba(151, 153, 172, 0.8);
   display: inline-block;
@@ -379,10 +395,15 @@
   border-top: 3px solid #00b378;
   color: #f6f6f8; }
   #skills img {
+    margin-top: 10%;
     max-width: 90px;
-    opacity: 0.8; }
-  #skills h2 {
+    opacity: 0.8;
     padding-bottom: 2%; }
+  #skills .skill2 {
+    max-width: 170px; }
+  #skills h2 {
+    padding-bottom: 2%;
+    color: #f6f6f8; }
   #skills p {
     display: none; }
   #skills .skill-name:hover p {
@@ -390,12 +411,12 @@
     text-align: center;
     font-size: 16px;
     position: absolute;
-    left: 32%;
-    padding-top: 2%; }
+    left: 38%;
+    color: #f6f6f8; }
   #skills .skill-name:hover img {
     opacity: 1; }
   #skills .mg-l {
-    margin-left: 8%; }
+    margin-left: 4%; }
   #skills .progress {
     background-color: rgba(246, 246, 248, 0.8);
     height: 25px !important;
@@ -432,21 +453,64 @@
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
   #hola {
-    margin: -63% 0 0 -56%;
-    width: 80%; }
+    width: 77% !important;
+    left: 56% !important;
+    top: 35% !important; }
     #hola h1 {
-      letter-spacing: 1rem !important; }
+      font-size: 3em;
+      letter-spacing: 0rem; }
+    #hola h3 {
+      font-size: 2em; } }
+@media screen and (max-width: 320px) {
+  .hamburger {
+    padding: 10px 10px; }
 
-  #separador {
-    display: none; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 30px !important;
+    height: 3px !important; }
+
+  #menu {
+    padding: 2%; }
+
+  .opciones-menu {
+    width: 100%;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    display: none;
+    list-style: none;
+    padding: 2%;
+    z-index: 1000; }
+    .opciones-menu li {
+      padding: 2%;
+      display: inline;
+      text-decoration: none;
+      background-color: #6b6a98; }
+      .opciones-menu li a {
+        color: #fff !important;
+        text-decoration: none !important;
+        letter-spacing: 2px; }
+
+  #home {
+    height: 400px !important; }
+
+  #hola {
+    width: 82%;
+    left: 52%;
+    top: 30%; }
+    #hola h1 {
+      font-size: 24px;
+      letter-spacing: 0rem; }
+    #hola h3 {
+      font-size: 20px; }
 
   .imagenFondo {
-    height: 290px !important; }
+    height: 200px !important; }
 
   .circulo {
-    width: 150px !important;
-    height: 150px !important;
-    margin-bottom: 10% !important; }
+    width: 125px !important;
+    height: 125px !important;
+    margin-bottom: 15% !important; }
 
   #proceso h3 {
     font-size: 18px !important;
@@ -455,19 +519,19 @@
     font-size: 16px !important; }
 
   .img-proceso1 {
-    max-width: 50px !important;
+    max-width: 40px !important;
     margin-top: 18%; }
 
   .img-proceso2 {
-    max-width: 50px !important;
+    max-width: 43px !important;
     margin-top: 18%; }
 
   .img-proceso3 {
-    max-width: 67px !important;
+    max-width: 59px !important;
     margin-top: 23%; }
 
   .img-proceso4 {
-    max-width: 90px !important;
+    max-width: 80px !important;
     margin-top: 30%; }
 
   .proceso-item {
@@ -492,6 +556,15 @@
 
   #skills {
     padding-bottom: 12% !important; }
+
+  .skill2 {
+    max-width: 120px !important; }
+
+  .skill-name p {
+    left: 30% !important; }
+
+  .mg-l {
+    margin-left: -2% !important; }
 
   .contact-text {
     top: 20% !important;

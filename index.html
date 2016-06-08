@@ -10,40 +10,66 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/scrolling-nav.css">
 </head>
 <body>
-	<!-- PRIMERA SECCION / HEADER / VIDEO-->
-	<div class="homepage-hero-module">
-		<!-- MENU HAMBURGUESA -->
-	    <div id="menu" class="text-right hamburger hamburger--collapse" type="button"
-        aria-label="Menu" aria-controls="navigation">
-			<span class="hamburger-box">
-				<span class="hamburger-inner"></span>
-			</span>
-		</div>
-		<!-- Menu de navegacion -->
+	<section id="home">
+		<!-- PRIMERA SECCION / HEADER / VIDEO-->
+		<div class="contenedor">
+			<!-- VIDEO -->
+			<div class="video-container">
+				<div class="filter"></div>
+				<video autoplay loop> 
+					<source src="Aloha-Mundo/MP4/Aloha-Mundo.mp4" type="video/mp4" /> 
+					<source src="Aloha-Mundo/OGV/Aloha-Mundo.ogv" type="video/ogg" /> 
+					<source src="Aloha-Mundo/WEBM/Aloha-Mundo.webm" type="video/webm" /> 
+				</video>
+			</div>
+		  	
+		  <!-- 	<nav class="navbar navbar-default navbar-fixed-top animated slideInRight">
+				<div class="container">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      Collect the nav links, forms, and other content for toggling
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    	<ul class="nav navbar-nav navbar-right">
+				    		<li><a href="#home">01 INICIO</a></li>
+							<li><a href="#proceso">02 PROCESO</a></li>
+							<li><a href="#proyectos">03 PROYECTOS</a></li>
+							<li><a href="#skills">04 HERRAMIENTAS</a></li>
+							<li><a href="#contacto">05 CONTACTO</a></li>
+				    	</ul>
+				    </div>
+				</div>
+			</nav> -->
+			<!-- MENU HAMBURGUESA -->
+		    <div id="menu" class="text-right hamburger hamburger--collapse" type="button"
+	        aria-label="Menu" aria-controls="navigation">
+				<span class="hamburger-box">
+					<span id="hamburgesa" class="hamburger-inner"></span>
+				</span>
+			</div>
+			<!-- Menu de navegacion -->
 			<ul class="opciones-menu text-right animated slideInRight">
-				<li><a href="#inicio">01 INICIO</a></li>
-				<li><a href="#proceso">02 PROCESO</a></li>
-				<li><a href="#proyectos">03 PROYECTOS</a></li>
-				<li><a href="#skills">04 HERRAMIENTAS</a></li>
-				<li><a href="#contacto">05 CONTACTO</a></li>
+				<li><a href="#home" class="page-scroll">01 INICIO</a></li>
+				<li><a href="#proceso" class="page-scroll">02 PROCESO</a></li>
+				<li><a href="#proyectos" class="page-scroll">03 PROYECTOS</a></li>
+				<li><a href="#skills" class="page-scroll">04 HERRAMIENTAS</a></li>
+				<li><a href="#contacto" class="page-scroll">05 CONTACTO</a></li>
 			</ul>
-		
-		<!-- VIDEO -->
-	    <div class="video-container">
-	        <div class="filter"></div>
-	        <video autoplay loop class="fillWidth">
-	            <source src="Aloha-Mundo/MP4/Aloha-Mundo.mp4" type="video/mp4" />
-	            <source src="Aloha-Mundo/WEBM/Aloha-Mundo.webm">
-	        </video>
-	    </div>
-		<!-- TEXTO EN VIDEO -->
-		<div id="hola" class="text-center">
-			<h1>¡HOLA MUNDO!</h1>
-			<h3>Mi nombre es Elisa</h3>
-		</div>
+		</div>	
+	</section>
+	
+	<!-- TEXTO EN VIDEO -->
+	<div id="hola" class="text-center">
+		<h1>¡HOLA MUNDO!</h1>
+		<h3>Mi nombre es Elisa</h3>
 	</div>
+	
 	<!-- Proceso -->
 	<section id="proceso">
 		<div class="container">
@@ -78,6 +104,22 @@
 						<p class="text-center proceso-item">Codificar</p>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Sobre Mi -->
+	<section id="sobreMi">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-center">
+						Sobre mí
+					</h2>
+					<p>Siempre en constante construcción, aprendiendo y desaprendiendo, me fascina la forma en la que las tecnologías de información y comunicación transforman nuestra vida, junto con el arte y la educación me apasionan sus infinitas posibilidades de creación y potencial para la transformación social, emprendedora y comprometida, busco aprender y compartir algo nuevo cada día.</p>
+				</div>
+			</div>
+			<div class="row">
+				
 			</div>
 		</div>
 	</section>
@@ -332,50 +374,62 @@
 	<section id="skills">
 		<div class="container">
 			<a href="#contacto"><div class="triangulo1-down"></div></a>
-			<!-- <div class="row">
-				<div class="col-md-12 text-center">
-					<img src="imagenes/skills3.png" alt="hardSkills">
-				</div>
-			</div> -->
+			<!-- Primer renglón -->
 			<div class="row">
 				<div class="col-md-12">
 					<h2 class="text-center">Mis herramientas</h2>
 				</div>
 			</div>
+			<!-- Segundo renglón -->
 			<div class="row">
-				<div class="col-md-2 col-xs-6 text-center">
+				<div class="col-md-3 col-xs-6 text-center">
 					<div class="skill-name">
 						<img src="imagenes/html-5.png" alt="">
 						<p>Avanzado</p>
 					</div>
 				</div>
-				<div class="col-md-2 col-xs-6 text-center">
+				<div class="col-md-3 col-xs-6 text-center">
 					<div class="skill-name">
 						<img src="imagenes/css-3.png" alt="">
 						<p>Avanzado</p>
 					</div>
 				</div>
-				<div class="col-md-2 col-xs-6 text-center">
-					<div class="skill-name">
-						<img src="imagenes/sass.png" alt="">
-						<p>Intermedio</p>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-6 text-center">
-					<div class="skill-name">
-						<img src="imagenes/bootstrap.png" alt="">
-						<p>Intermedio</p>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-6 text-center">
+				<div class="col-md-3 col-xs-6 text-center">
 					<div class="skill-name">
 						<img src="imagenes/javascript.png" alt="">
+						<p>Intermedio</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 text-center">
+					<div class="skill-name">
+						<img src="imagenes/jquery.png" alt="">
+						<p>Intermedio</p>
+					</div>
+				</div>
+			</div>
+			<!-- Tercer renglón -->
+			<div class="row">
+				<div class="col-md-3 col-xs-6 text-center">
+					<div class="skill-name">
+						<img src="imagenes/sass.png" alt="">
 						<p class="mg-l">Básico</p>
 					</div>
 				</div>
-				<div class="col-md-2 col-xs-6 text-center">
+				<div class="col-md-3 col-xs-6 text-center">
 					<div class="skill-name">
-						<img src="imagenes/jquery.png" alt="">
+						<img src="imagenes/bootstrap.png" alt="">
+						<p class="mg-l">Básico</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 text-center">
+					<div class="skill-name">
+						<img src="imagenes/github-logo.png" alt="">
+						<p class="mg-l">Intermedio</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-6 text-center">
+					<div class="skill-name">
+						<img class="skill2" src="imagenes/adwords.png" alt="">
 						<p class="mg-l">Básico</p>
 					</div>
 				</div>
@@ -405,6 +459,7 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script src="js/jquery-min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/scrolling-nav.js"></script>
     </body>
 </html>
