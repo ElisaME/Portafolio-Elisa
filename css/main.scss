@@ -184,6 +184,9 @@ h2{
             color:#fff !important;
             text-decoration:none !important;
             letter-spacing:2px;
+            &:hover{
+                color:$verde !important;
+            }
         }
     }
 }
@@ -233,12 +236,19 @@ h2{
 }
 /*SOBRE MI*/
 #sobreMi{
-    background-color: $textoClaro;
+    height:300px;
     color:$textoOscuro;
     p{
         font-size: 18px;
         text-align:justify;
     }
+    /*.img-yo{
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        background-image: url(../imagenes/yo-museo.jpg);
+        background-position: -340px -307px;
+    }*/
 }
 /* PROYECTOS */
 .titulo-proyecto{
@@ -304,7 +314,7 @@ h2{
 
 /*Skills*/
 #skills{
-    background-color:$secundarioTransparente;
+    background-color:$colorSecundario;
     padding-bottom:5%;
     position: relative;
     border-top: 3px solid $colorPrimario;
@@ -312,7 +322,7 @@ h2{
     img{
         margin-top:10%;
         max-width:90px;
-        opacity:0.8;
+        opacity:0.6;
         padding-bottom:2%;
     }
     .skill2{
@@ -365,8 +375,8 @@ h2{
     .contact-text{
         display:block;
         position: absolute;
-        top:15%;
-        left:21%;
+        top:20%;
+        left:30%;
         color:$textoOscuro;
         .encabezado{
             font-size: 4em;
@@ -511,8 +521,8 @@ h2{
         margin-left:-2% !important;
     }
     .contact-text{
-        top:20% !important;
-        left:10% !important;
+        top:35% !important;
+        left:9% !important;
         .encabezado{
             font-size: 2em !important;
         }

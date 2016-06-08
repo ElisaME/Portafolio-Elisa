@@ -6,18 +6,11 @@ $(document).ready(function(){
 		// Do something else, like open/close menu
 		$('.opciones-menu').toggle();
 	});
- 
-    // menu
-    // $(function () {
-    //     $(window).scroll(function () {
-    //         // set distance user needs to scroll before we fadeIn navbar
-    //          if ($(this).scrollTop() > 600) {
-    //             $('#hamburguesa').addClass('hamburguesa-verde');
-    //         } else {
-    //             $('#hamburguesa').removeClass('hamburguesa-verde');
-    //         }
-    //     });
-    // });
+    //Esconder menú cuando selecciones una opción del menú
+    $('.menu-item').click(function(){
+        $('.opciones-menu').toggle();
+        $hamburger.toggleClass("is-active");
+    })
 });
 
 //video

@@ -128,6 +128,8 @@ h2 {
       color: #fff !important;
       text-decoration: none !important;
       letter-spacing: 2px; }
+      .opciones-menu li a:hover {
+        color: #b1e001 !important; }
 
 .hamburger2 {
   background-color: #6b6a98 !important; }
@@ -168,8 +170,15 @@ h2 {
 
 /*SOBRE MI*/
 #sobreMi {
-  background-color: #f6f6f8;
-  color: #32394f; }
+  height: 300px;
+  color: #32394f;
+  /*.img-yo{
+      width:200px;
+      height:200px;
+      border-radius:50%;
+      background-image: url(../imagenes/yo-museo.jpg);
+      background-position: -340px -307px;
+  }*/ }
   #sobreMi p {
     font-size: 18px;
     text-align: justify; }
@@ -389,7 +398,7 @@ h2 {
 
 /*Skills*/
 #skills {
-  background-color: rgba(107, 106, 152, 0.8);
+  background-color: #6b6a98;
   padding-bottom: 5%;
   position: relative;
   border-top: 3px solid #00b378;
@@ -397,7 +406,7 @@ h2 {
   #skills img {
     margin-top: 10%;
     max-width: 90px;
-    opacity: 0.8;
+    opacity: 0.6;
     padding-bottom: 2%; }
   #skills .skill2 {
     max-width: 170px; }
@@ -440,8 +449,8 @@ h2 {
   #contacto .contact-text {
     display: block;
     position: absolute;
-    top: 15%;
-    left: 21%;
+    top: 20%;
+    left: 30%;
     color: #32394f; }
     #contacto .contact-text .encabezado {
       font-size: 4em; }
@@ -567,8 +576,8 @@ h2 {
     margin-left: -2% !important; }
 
   .contact-text {
-    top: 20% !important;
-    left: 10% !important; }
+    top: 35% !important;
+    left: 9% !important; }
     .contact-text .encabezado {
       font-size: 2em !important; }
     .contact-text img {
