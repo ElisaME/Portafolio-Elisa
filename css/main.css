@@ -183,6 +183,10 @@ h2 {
   #sobreMi p {
     font-size: 18px;
     text-align: justify; }
+  #sobreMi .frase {
+    font-size: 2em;
+    color: #00b378;
+    text-align: center; }
 
 /* PROYECTOS */
 .titulo-proyecto {
@@ -516,6 +520,9 @@ h2 {
 
   .imagenFondo {
     height: 200px !important; }
+
+  .frase {
+    font-size: 1.5em !important; }
 
   #proceso .circulo {
     width: 125px !important;

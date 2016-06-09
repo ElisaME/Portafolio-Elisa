@@ -10,10 +10,17 @@ $(document).ready(function(){
     $('.menu-item').click(function(){
         $('.opciones-menu').toggle();
         $hamburger.toggleClass("is-active");
-    })
+    });
     //lettering
-    $(".fancy_title").lettering();
-    $(".char1").addClass("animated fadeInUpBig flipOutY");
+    // $(".fancy_title").lettering();
+   
+    $('.tlt').textillate({ 
+      in: { effect: 'flipInX', delay:100, sync:true },
+      out: { effect: 'flipOutY', shuffle: true },
+      loop: true
+    });
+
+    // $(".char1").addClass("animated fadeInUpBig flipOutY");
 });
 
 //video

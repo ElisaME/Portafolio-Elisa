@@ -250,6 +250,11 @@ h2{
         background-image: url(../imagenes/yo-museo.jpg);
         background-position: -340px -307px;
     }*/
+    .frase{
+        font-size: 2em;
+        color:$colorPrimario;
+        text-align:center;
+    }
 }
 /* PROYECTOS */
 .titulo-proyecto{
@@ -455,7 +460,9 @@ h2{
     .imagenFondo{
         height:200px !important;
     }
-    
+    .frase{
+        font-size: 1.5em !important;
+    }
     #proceso{
         .circulo{
             width: 125px !important;
