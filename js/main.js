@@ -11,6 +11,9 @@ $(document).ready(function(){
         $('.opciones-menu').toggle();
         $hamburger.toggleClass("is-active");
     })
+    //lettering
+    $(".fancy_title").lettering();
+    $(".char1").addClass("animated fadeInUpBig flipOutY");
 });
 
 //video

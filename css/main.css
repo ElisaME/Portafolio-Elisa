@@ -172,6 +172,7 @@ h2 {
 #sobreMi {
   height: 300px;
   color: #32394f;
+  background-color: #f6f6f8;
   /*.img-yo{
       width:200px;
       height:200px;
@@ -470,7 +471,7 @@ h2 {
       letter-spacing: 0rem; }
     #hola h3 {
       font-size: 2em; } }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .hamburger {
     padding: 10px 10px; }
 
@@ -516,11 +517,10 @@ h2 {
   .imagenFondo {
     height: 200px !important; }
 
-  .circulo {
+  #proceso .circulo {
     width: 125px !important;
     height: 125px !important;
     margin-bottom: 15% !important; }
-
   #proceso h3 {
     font-size: 18px !important;
     margin-bottom: 8%; }
@@ -560,6 +560,9 @@ h2 {
     .modal-dialog hr {
       height: 1px !important; }
 
+  #sobreMi {
+    height: 400px !important; }
+
   .skill-name {
     margin-top: 25%; }
 
@@ -576,14 +579,17 @@ h2 {
     margin-left: -2% !important; }
 
   .contact-text {
-    top: 35% !important;
-    left: 9% !important; }
+    top: 21% !important;
+    left: 15% !important; }
     .contact-text .encabezado {
       font-size: 2em !important; }
     .contact-text img {
       max-width: 80px !important; }
+    .contact-text h3 {
+      font-size: 12px; }
 
   .opciones-menu {
+    position: fixed;
     right: 13%; }
     .opciones-menu li {
       padding: 2%;
