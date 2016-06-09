@@ -236,20 +236,31 @@ h2{
 }
 /*SOBRE MI*/
 #sobreMi{
-    height:300px;
+    padding-top:3%;
+    
     color:$textoOscuro;
     background-color: $textoClaro;
+    h2{
+        padding-bottom:2%;
+    }
     p{
+        padding: 2% 0;
         font-size: 18px;
         text-align:justify;
+        margin-bottom:3%;
     }
-    /*.img-yo{
+    .caja{
         width:200px;
         height:200px;
-        border-radius:50%;
-        background-image: url(../imagenes/yo-museo.jpg);
-        background-position: -340px -307px;
-    }*/
+        border-radius:100px;
+        background-image: url(../imagenes/Eli.jpg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -ms-background-position:center;
+        background-position:center;
+        margin:-12% auto;
+    }
     .frase{
         font-size: 2em;
         color:$colorPrimario;
@@ -373,10 +384,12 @@ h2{
     background-position: center;
     height:auto;
     position: relative;
+    
     .filtro{
-        height: 400px;
+        height: 420px;
         z-index: -1;
         background-color: $claroTransparente;
+        padding-bottom:2%;
     }
     .contact-text{
         display:block;
@@ -389,9 +402,17 @@ h2{
         }
         img{
             margin:0 auto;
-            max-width:100px;
+            max-width:90px;
             padding:2%;
         }
+    }
+    .cv{
+        display:inline-block;
+        text-decoration:none;
+        color:$textoClaro;
+        background-color: $colorPrimario;
+        padding:1.5%;
+        border-radius:3px;
     }
 }
   
@@ -445,16 +466,22 @@ h2{
     #home{
         height:400px !important;
     }
+    video{
+        height:100% !important;
+    }
     #hola{
         width: 82%;
         left:52%;
         top:30%;
+        border:3px solid $colorPrimario;
         h1{
             font-size: 24px;
             letter-spacing: 0rem;
+            color:$colorSecundario;
         }
         h3{
             font-size: 20px;
+            color:$colorSecundario;
         }
     }
     .imagenFondo{
@@ -514,9 +541,6 @@ h2{
             height:1px !important;
         }
     }
-    #sobreMi{
-        height:400px !important;
-    }
     .skill-name{
         margin-top:25%;
     }
@@ -532,7 +556,11 @@ h2{
     .mg-l{
         margin-left:-2% !important;
     }
-
+    .caja{
+        width:150px !important;
+        height:150px !important;
+        margin:2% auto !important;
+    }
     .contact-text{
         top:21% !important;
         left:15% !important;
@@ -545,6 +573,9 @@ h2{
         h3{
             font-size: 12px;
         }
+    }
+    .cv{
+        margin-top:10%;
     }
     .opciones-menu{
         position: fixed;

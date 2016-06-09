@@ -170,19 +170,27 @@ h2 {
 
 /*SOBRE MI*/
 #sobreMi {
-  height: 300px;
+  padding-top: 3%;
   color: #32394f;
-  background-color: #f6f6f8;
-  /*.img-yo{
-      width:200px;
-      height:200px;
-      border-radius:50%;
-      background-image: url(../imagenes/yo-museo.jpg);
-      background-position: -340px -307px;
-  }*/ }
+  background-color: #f6f6f8; }
+  #sobreMi h2 {
+    padding-bottom: 2%; }
   #sobreMi p {
+    padding: 2% 0;
     font-size: 18px;
-    text-align: justify; }
+    text-align: justify;
+    margin-bottom: 3%; }
+  #sobreMi .caja {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url(../imagenes/Eli.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -ms-background-position: center;
+    background-position: center;
+    margin: -12% auto; }
   #sobreMi .frase {
     font-size: 2em;
     color: #00b378;
@@ -448,9 +456,10 @@ h2 {
   height: auto;
   position: relative; }
   #contacto .filtro {
-    height: 400px;
+    height: 420px;
     z-index: -1;
-    background-color: rgba(246, 246, 248, 0.8); }
+    background-color: rgba(246, 246, 248, 0.8);
+    padding-bottom: 2%; }
   #contacto .contact-text {
     display: block;
     position: absolute;
@@ -461,8 +470,15 @@ h2 {
       font-size: 4em; }
     #contacto .contact-text img {
       margin: 0 auto;
-      max-width: 100px;
+      max-width: 90px;
       padding: 2%; }
+  #contacto .cv {
+    display: inline-block;
+    text-decoration: none;
+    color: #f6f6f8;
+    background-color: #00b378;
+    padding: 1.5%;
+    border-radius: 3px; }
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
@@ -508,15 +524,21 @@ h2 {
   #home {
     height: 400px !important; }
 
+  video {
+    height: 100% !important; }
+
   #hola {
     width: 82%;
     left: 52%;
-    top: 30%; }
+    top: 30%;
+    border: 3px solid #00b378; }
     #hola h1 {
       font-size: 24px;
-      letter-spacing: 0rem; }
+      letter-spacing: 0rem;
+      color: #6b6a98; }
     #hola h3 {
-      font-size: 20px; }
+      font-size: 20px;
+      color: #6b6a98; }
 
   .imagenFondo {
     height: 200px !important; }
@@ -567,9 +589,6 @@ h2 {
     .modal-dialog hr {
       height: 1px !important; }
 
-  #sobreMi {
-    height: 400px !important; }
-
   .skill-name {
     margin-top: 25%; }
 
@@ -585,6 +604,11 @@ h2 {
   .mg-l {
     margin-left: -2% !important; }
 
+  .caja {
+    width: 150px !important;
+    height: 150px !important;
+    margin: 2% auto !important; }
+
   .contact-text {
     top: 21% !important;
     left: 15% !important; }
@@ -594,6 +618,9 @@ h2 {
       max-width: 80px !important; }
     .contact-text h3 {
       font-size: 12px; }
+
+  .cv {
+    margin-top: 10%; }
 
   .opciones-menu {
     position: fixed;
